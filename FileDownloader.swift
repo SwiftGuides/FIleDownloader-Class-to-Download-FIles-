@@ -1,15 +1,17 @@
 //
 //  FileDownloader.swift
-//  EvenTickets
+// 
+//  Swift 4 
 //
 //  Created by MacMini on 6/13/19.
-//  Copyright © 2019 Amit. All rights reserved.
+//  Copyright © 2019 EndLess. All rights reserved.
 //
 
 import Foundation
 
 class FileDownloader {
     
+    //MARK: Synchronous Method
     static func loadFileSync(url: URL, completion: @escaping (String?, Error?) -> Void)
     {
         let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -42,6 +44,7 @@ class FileDownloader {
         }
     }
     
+    //MARK: ASynchronous Method
     static func loadFileAsync(url: URL, completion: @escaping (String?, Error?) -> Void)
     {
         let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
