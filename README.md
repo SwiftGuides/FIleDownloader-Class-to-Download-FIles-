@@ -6,7 +6,7 @@ Source :- https://stackoverflow.com/a/56580009/10422074
 
 ** Here is how to call this class 
 
-```swfit
+```swift
 
 let url = URL(string: "http://www.filedownloader.com/mydemofile.pdf")
 FileDownloader.loadFileAsync(url: url!) { (path, error) in
